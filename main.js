@@ -55,7 +55,7 @@ for(let i = 0; i < row1.length; i++){
     row1[i].addEventListener("click", function(){
         console.log("Clicked")
 
-        let q100s = groupedData.$100[Math.round(Math.random() * groupedData.$100.length)]
+        let q100s = groupedData.$100[Math.round(Math.random() * groupedData.$100.length)];
 
         
     let question = document.querySelector("#question")
@@ -69,7 +69,7 @@ for(let i = 0; i < row1.length; i++){
 
        submitButton.addEventListener("click", function(event){
        console.log('hi')
-       
+       event.preventDefault();
 
     if(input.value === q100s.answer){
         question.innerText = "Correct" 
@@ -81,9 +81,9 @@ for(let i = 0; i < row1.length; i++){
         
         score.innerText = totalScore
 
-    input.value = "";
+    // input.value = "";
     }
-    
+  
 })
     })  
 }
@@ -122,7 +122,7 @@ for(let i = 0; i < row2.length; i++){
         
         score.innerText = totalScore
 
-    input.value = ""
+    // input.value = ""
     }
     })
     
@@ -165,7 +165,7 @@ for(let i = 0; i < row3.length; i++){
         
         score.innerText = totalScore
 
-    input.value = "";
+    // input.value = "";
     }
     
 })
@@ -205,7 +205,7 @@ for(let i = 0; i < row4.length; i++){
         
         score.innerText = totalScore
 
-    input.value = "";
+    // input.value = "";
     }
     
 })
@@ -245,7 +245,7 @@ for(let i = 0; i < row5.length; i++){
         
         score.innerText = totalScore
 
-    input.value = "";
+    // input.value = "";
     }
     
 })
